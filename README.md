@@ -1,4 +1,4 @@
-# Character-Controller-Demo-
+# Character Controller Demo
 Free 3D Character Controller 
 
 What does this character controller offer?
