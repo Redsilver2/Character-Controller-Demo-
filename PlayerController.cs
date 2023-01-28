@@ -224,15 +224,3 @@ public class PlayerController : MonoBehaviour
         LockCursor(LockMode);
     }
 }
-
-[System.Serializable]
-public struct AudioController 
-{
-    [SerializeField] private string Tag;
-    public string GetTag => Tag;
-
-    [SerializeField] AudioClip[] audioClips;
-    public AudioClip[] GetAudioClips => audioClips;
-
-}
-
