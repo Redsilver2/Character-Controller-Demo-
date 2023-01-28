@@ -31,11 +31,9 @@ public class PlayerController : MonoBehaviour
 
     private Camera Cam = null;
     private CharacterController Character = null;
-    //private PhotonView view = null;
 
     private IEnumerator CrouchEnum = null;
 
-   // public PhotonView GetView => view;
     public CharacterController GetCharacter => Character;
 
     public static PlayerController Instance = null;
