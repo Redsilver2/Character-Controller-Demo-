@@ -104,11 +104,13 @@ public class PlayerController : MonoBehaviour
 
     private void Fall()
     {
-        CurrentFallSpeed += FallSpeedForce;
-
-        if(CurrentFallSpeed > MaxFallSpeed)
+        if(CurrentFallSpeed >= MaxFallSpeed)
         {
             CurrentFallSpeed = MaxFallSpeed;
+        }
+        else
+        {
+            CurrentFallSpeed += FallSpeedForce;
         }
 
         Character.Move(new Vector3(0f, -CurrentFallSpeed * Time.deltaTime, 0f));
